@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+   
+    <div>
+        <h1 id="titulo">Esse é um h1</h1>
+    </div>
+   
+   <div>
+       <p class="paragrafo">esse é um primeiro <b>parágrafo</b></p>
+       <p class="paragrafo">esse é o segundo parágrafo</p>
+   </div>
+
+
+    <script>
+        //document.body.children[0].style.background='blue'// acessa o h1
+       // document.body.children[0].children[0].style.color='red' //estiliza apenas o text do h1
+       // document.body.children[1].style.background='green'// acessa o h1
+
+
+       /*get = pegar 
+       element = elemento 
+       by = por
+       id
+       */
+     // let h1 =  document.getElementById('idh1')
+     //  h1.style.color = 'blue'
+
+    /*
+     let p = document.getElementsByClassName('paragrafo') // Elements = acessa todas as classes
+     console.log(p[0].style.color ='green')
+    */
+
+  /* let h1 = document.querySelector('#titulo')
+   console.log(h1) */
+
+   let p = document.querySelectorAll('.paragrafo') //seleciona todos os elementos com essa class
+   console.log(p)
+    </script>
+
+</body>
+
+</html>
