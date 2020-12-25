@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Menu lateral</title>
+    <style>
+      
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      body{
+          background-color: #e8fff7;
+      }
+     .header{
+         padding:12px 26px;
+         background-color: #41856a;
+
+      }
+
+      .header img {
+          width: 24px;
+          height: 24px;
+      }
+
+      .header button{
+          background: transparent;
+          border-radius: 4px;
+          padding: 2px 6px;
+          border: 0;
+          cursor: pointer;
+      }
+ 
+      .side-bar{
+          background-color: white;
+          height: 1000px;
+          width: 264px;
+          box-shadow: 1px -1px 2px rgba(1, 1, 1, 0.2);
+      }
+
+      .side-bar a{
+          text-decoration: none;
+          display: block;
+          padding: 18px 26px;
+          color: rgb(78, 77, 77);
+          font-weight: bold;
+      }
+
+      .side-bar a:hover{
+       background-color: #dddddd;
+      }
+
+
+    </style>
+
+</head>
+
+<body>
+    
+ <div class="header">
+     <button onclick="recolher()">
+     <img src="img/bars-solid.svg" alt="Menu lateral">
+     </button>
+ </div>
+
+ <div id="side-bar" class="side-bar">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+ </div>
+
+
+
+     
+    <script>
+        let menu = document.getElementById('side-bar')
+  
+
+        function recolher(){
+            if (menu.style.marginLeft == 0 ){
+              menu.style.marginLeft = '-264px'
+            }
+            else{
+                
+            }
+        }
+    
+    </script>
+
+</body>
+
+</html>

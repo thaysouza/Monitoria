@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+        button {
+            width: 100px;
+            height: 50px;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn1{
+            background-color: blue;
+        }
+    
+        .btn2{
+            background-color: red;
+        }
+
+        .btn3{
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+   
+     <button id="btn1" class="btn1" onmouseover="botao1()">Passe sobre</button>
+     <button id="btn2" class="btn2" onmouseout="botao2()">Saia do botão</button>
+     <button id="btn3" class="btn3" onclick="botao3()">Clique</button>
+
+    <script>
+        
+        function botao1(){
+            document.body.style.background = 'blue'
+        }
+
+        function botao2(){
+            document.body.style.background = 'red'
+        }
+
+        function botao3(){
+            document.body.style.background = 'green'
+        }
+    </script>
+
+</body>
+
+</html>
