@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Verificar idade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <div class="parte1">
+   <img src="img/simbolos-de-interrogacao-cor_1205-360.jpg" id="image" alt="interrogação">
+ 
+   </div>
+
+   <div class="parte2">
+   <text id ="texto" >
+
+   </text>
+   </div>
+
+
+
+   <div class="parte3">
+<p>Qual é a sua idade ? </p>
+    <input type="text" id="idade">
+       <!-- <label for="masculino">
+            <input type="radio" name="sexo" id="masculino">
+            masculino
+        </label>
+
+        <label for="feminino">
+            <input type="radio" name="sexo" id="feminino">
+            Feminino
+        </label>-->
+
+        <button onclick="troca()">Verificar</button>
+      
+
+   </div>
+  </div>
+
+    <script>
+        function troca(){
+
+        let img = document.getElementById('image');
+    
+        let idade = document.getElementById('idade')
+        /*let f = document.getElementById('feminino')*/
+
+        if (idade.value < 12 ){
+            img.src = 'https://lh3.googleusercontent.com/proxy/GKOupBLqIHpjDLzm4GscQcetX4ohVjRH95jaggPtIMqbFJnwfxftyV31K8kroxFix2MFobZ5i2ycKOzYOOwXJhskK7TZI0QAyNeFIexGykICLplCsWx4W9bz8tr44W3ETozIdARcbrjfzdRa2wvCkg'
+            document.querySelector("#texto").innerHTML ="Você é uma criança !";
+            
+        }
+        else if(idade.value >= 12 && idade.value <= 18 ){
+            img.src = 'https://veja.abril.com.br/wp-content/uploads/2018/05/entretenimento-livro-pre-adolecente-20131105-0002.jpg'
+            document.querySelector("#texto").innerHTML ="Você é um adolescente !";
+        }
+        else if(idade.value >= 19 && idade.value <= 24 ){
+            img.src = 'https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2017/03/formacao_jovem-nao-se-contente-com-o-que-e-passageiro.jpg'
+            document.querySelector("#texto").innerHTML ="Você é um jovem !";
+        }
+        else if(idade.value >= 25 && idade.value <= 50 ){
+            img.src = 'https://annahellerpsicologia.com.br/images/adultos.jpg'
+            document.querySelector("#texto").innerHTML ="Você é um adulto !";
+        }
+        else{
+            img.src = 'https://casaderepousoemsaopaulo.com/blog/wp-content/uploads/2019/12/lazer-para-idosos.jpg'
+            document.querySelector("#texto").innerHTML ="Você é um idoso !";
+        }
+        }
+
+      
+       
+  
+    </script>
+
+</body>
+
+</html>
